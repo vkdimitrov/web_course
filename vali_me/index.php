@@ -5,6 +5,11 @@
 		<title>Title of the document</title>
 	</head>
 	<body>
-		Content of the document......
+		<div>
+		div 1 
+		</div>
+		<div>
+			div 2 
+		</div>
 	</body>
 </html>

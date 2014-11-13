@@ -1,0 +1,43 @@
+.days {
+	float: left;
+}
+.red {
+	background: red;
+}
+.blue {
+	background: blue;
+}
+
+.green {
+	background: green;
+}
+
+.black {
+	background: black;
+}
+
+.black .green{
+	background: red;
+}
+.green.inner {
+	/*
+	sadad
+	asdsad
+	asdsad
+	asdsad
+	 */
+	background: #cc00cc;
+}
+
+.green .inner {
+	/*background: #cc00cc;*/
+}
+
+#gradusi{
+	font-size: 52px;
+	color: #bbbb33;
+}
+
+#navigation a {
+	color: red;
+}

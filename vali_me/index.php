@@ -29,6 +29,6 @@
 				<td>4</td> 
 			 </tr>
 		</table>
-
+		<a href="http://dir.bg" target="_blank"> Dir bg</a>
 	</body>
 </html>

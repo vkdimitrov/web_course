@@ -41,3 +41,10 @@
 #navigation a {
 	color: red;
 }
+.picture {
+	cursor: pointer;
+}
+
+#text {
+	display: none;
+}

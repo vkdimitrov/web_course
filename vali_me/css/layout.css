@@ -1,1 +1,21 @@
 /* css go here */
+#container {
+	border: 1px solid red;
+	height: 500px;
+}
+
+#header {
+	background: grey;
+	height: 80px; 
+	margin: 10px 10px 0px 10px;
+}
+
+#temp_box {
+	background: #330066;
+	height: 300px;
+	width: 1900px; 
+	margin: 10px 10px 0px 10px;
+	overflow: hidden;
+	position: fixed;
+	top: 15px;
+}	

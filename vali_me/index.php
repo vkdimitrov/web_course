@@ -1,3 +1,6 @@
+<?php
+echo "asd";
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,5 +29,9 @@
 	</div>
 
 </div>
+
+<?php
+asd
+?>
 </body>
 </html> 

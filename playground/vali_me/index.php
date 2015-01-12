@@ -1,4 +1,5 @@
 <?php
+die('tuk sme');
 session_start();
 
 

@@ -18,4 +18,4 @@ web_course
 
 ### Задачи за домашно
 
-[homeworks/homework1.md]
+[задача 1](homeworks/homework1.md)

@@ -1,20 +1,26 @@
 <?php
+$asd = array(1,2,3);
 
+$lenght = count($asd);
+$sum = 0;
+for ($i=0; $i < $lenght; $i++) {
+	if ($asd[$i] == 2)
+	{
 
-$column1 = array(1,2,3,4,5,6,7,8);
-$column2 = array(9,10,11,12,13,14,15,16);
-$column3 = array(17,18,19,20,21,22,23,24);
-$column4 = array(25,26,27,28,29,30,31,32);
-$board = array($column1, $column2, $column3, $column4);
-/*foreach ($board as $column) {
-	foreach ($column as $num) {
-		echo $num;
 	}
-	echo "<br>";
+	echo $asd[$i];
 }
-*/session_start();
+echo $sum."<br>";
 
-//echo $_SESSION["user"];
+foreach ($asd as $index) {
+	echo $index."<br>";
+}
+$i = 0;
+while ($i < $lenght)
+{
+	echo $asd[$i]."<br>";
+	$i++;
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -24,7 +30,7 @@ $board = array($column1, $column2, $column3, $column4);
 	</head>
 	<body>
 		<h1>Info</h1>
-		<form name="info" action="form.php" method="GET">
+		<form name="info" action="form.php" method="GET" >
 			<table border="1">
 				<tr>
 					<td>Firstname:</td>
@@ -32,7 +38,7 @@ $board = array($column1, $column2, $column3, $column4);
 				</tr>
 				<tr>
 					<td>Lastname:</td>
-					<td><input type="text" name="lastname"></td>
+					<td><input type="file" name="lastname"></td>
 				</tr>
 				<tr>
 					<td>

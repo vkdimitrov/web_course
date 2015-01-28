@@ -19,3 +19,4 @@ web_course
 ### Задачи за домашно
 
 [задача 1](homeworks/homework1.md)
+[задача 2](homeworks/homework2.md)

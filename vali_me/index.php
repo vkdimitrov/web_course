@@ -1,37 +1,67 @@
-<?php
-echo "asd";
-?>
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="css/layout.css">
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="js/main.js"></script> 
-<title>vali me</title>
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8">
+		<title>Vali me</title>
+	</head>
+	<body>
+		<h1>Info</h1>
+		<form name="info" action="info.php" method="GET">
+			<table border="1">
+				<tr>
+					<td>Firstname:</td>
+					<td><input type="text" name="firstname"></td>
+				</tr>
+				<tr>
+					<td>Lastname:</td>
+					<td><input type="text" name="lastname"></td>
+				</tr>
+				<tr>
+					<td> 
+						Birth Date
+					</td>
+					<td>
+						<select name="year">
+							<?php
+							for ($i=1900; $i < 2015; $i++)
+							{
+							 #echo '<option value="'.$i.'">'.$i.'</option>';
+							 echo "<option value=\"$i\">$i</option>";
+							}
+							?>
+							</select>
 
-<div id="container">
-	<div id="header">	
-		<div id="location_info"></div>
-		<div id="date_info"></div> 
-	</div>	
-	<div id="temp_box">
-		<div id="degrees"></div>
-		<div id="description"></div>
-		<div id="weather_icon"></div>
-	</div>
-	<div id="next_days">
-		<div class="next"></div>
-		<div class="next"></div>
-		<div class="next"></div>
-	</div>
+							<select name="days">
+							<?php
+							for ($i=1; $i < 31; $i++)
+							{
+							 #echo '<option value="'.$i.'">'.$i.'</option>';
+							 echo "<option value=\"$i\">$i</option>";
+							}
+							?>
+							</select>
 
-</div>
+							<select name="months">
+							<?php
+							for ($i=1; $i <= 12; $i++)
+							{
+							 $month_name = date( 'F', mktime( 0, 0, 0, $i + 1, 0, 0, 0 ) );
+							 echo "<option value=\"$i\">$month_name</option>";
+							}
+							?>
+						</select> 
+					</td>
+				</tr>
+				<tr>
+					<td>
+					
+					</td> 
 
-<?php
-asd
-?>
-</body>
-</html> 
+					<td>
+						<input type="submit" value="Изпрати">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

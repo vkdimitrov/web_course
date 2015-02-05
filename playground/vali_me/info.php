@@ -6,7 +6,7 @@
 	</head>
 	<body>
 		<h1>Info</h1>
-		<form name="info" action="form.php" method="GET">
+		<form name="info" action="form.php" method="GET" >
 			<table border="1">
 				<tr>
 					<td>Firstname:</td>
@@ -14,7 +14,7 @@
 				</tr>
 				<tr>
 					<td>Lastname:</td>
-					<td><input type="text" name="lastname"></td>
+					<td><input type="file" name="lastname"></td>
 				</tr>
 				<tr>
 					<td>

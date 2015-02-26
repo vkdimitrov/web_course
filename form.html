@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" content=""/>
+    <meta name="viewport" content="width=device-width" />
+
+    <!--TODO5
+    <script type="text/javascript">
+        var Ext = Ext || {};
+        Ext.manifest = { // the same content as "app.json"
+            compatibility: {
+                ext: '4.2'
+            }
+        }
+    </script>
+    --->
+    
+    <!-- debug sencha files -->
+    <!-- end debug sencha files -->
+
+    <!-- release files -->
+    <script type="text/javascript" src="http://92.247.18.147:8078/scripts/lib/extjs/examples/shared/include-ext.js"></script>
+    <!-- release files -->
+
+    <link rel="stylesheet" type="text/css" href="http://92.247.18.147:8078/scripts/lib/extjs/examples/shared/example.css" />
+    <script type="text/javascript" src="http://92.247.18.147:8078/scripts/lib/extjs/examples/shared/examples.js"></script>
+    <script type="text/javascript" src="http://92.247.18.147:8078/scripts/lib/extjs/examples/shared/states.js"></script>
+    
+    <script type="text/javascript" src="http://92.247.18.147:8078/scripts/app/common.sencha.js"></script>
+
+    <script type="text/javascript" src="http://92.247.18.147:8078/scripts/app/main.sencha.js"></script>
+    <script type="text/javascript" src="http://92.247.18.147:8078/scripts/app/plugins.js"></script>
+
+    
+    <script type="text/javascript" src="http://92.247.18.147:8078/scripts/client/avo_bell_web/utils/init.js"></script>
+
+
+    
+    
+    
+    <style type="text/css">        
+        .x-item-disabled .x-form-item-label,
+        .x-item-disabled .x-form-cb-label {
+            filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+            opacity: 0.9; 
+        }
+        .x-column-header-inner .x-column-header-text { white-space: normal; }        
+    </style>
+</head>
+<body>
+    <style>
+.btn-home-page
+{
+background-color: #add2ed !important;
+background-image: none;
+}
+.btn-home-page-text
+{
+font-size: 12px;
+font-weight: bold;
+font-family: helvetica, arial, verdana, sans-serif;
+color: #666666;
+}
+.x-btn-home-page-over
+{
+background-color: #a3c8e3 !important;
+background-image: none;
+}
+
+</style>
+
+    <div id="msg-div" style="z-index:99999;"></div>
+    <style>
+        .btn-home-page
+        {
+            background-color: #add2ed !important;
+            background-image: none;
+        }
+        .btn-home-page-text
+        {
+            font-size: 12px;
+            font-weight: bold;
+            font-family: helvetica, arial, verdana, sans-serif;
+            color: #666666;
+        }
+        .x-btn-home-page-over
+        {
+            background-color: #a3c8e3 !important;
+            background-image: none;
+        }
+
+    </style>
+
+
+    <div style="display: none;" class="x-tip x-layer x-tip-default x-border-box" id="ext-quicktips-tip">
+        <div class="x-tip-header x-header x-header-horizontal x-docked x-unselectable x-tip-header-default x-horizontal x-tip-header-horizontal x-tip-header-default-horizontal x-top x-tip-header-top x-tip-header-default-top x-docked-top x-tip-header-docked-top x-tip-header-default-docked-top"
+             id="ext-quicktips-tip_header">\n
+            <div id="ext-quicktips-tip_header-body"
+                 class="x-header-body x-tip-header-body x-tip-header-body-default x-tip-header-body-horizontal x-tip-header-body-default-horizontal x-tip-header-body-top x-tip-header-body-default-top x-tip-header-body-docked-top x-tip-header-body-default-docked-top x-box-layout-ct x-tip-header-body-default-horizontal x-tip-header-body-default-top x-tip-header-body-default-docked-top"
+                 role="presentation">
+                <div id="ext-quicktips-tip_header-innerCt" class="x-box-inner " role="presentation">
+                    <div id="ext-quicktips-tip_header-targetEl" class="x-box-target" role="presentation">
+                        <div class="x-component x-header-text-container x-tip-header-text-container x-tip-header-text-container-default x-box-item x-component-default"
+                             unselectable="on" id="ext-quicktips-tip_header_hd">
+                            <span id="ext-quicktips-tip_header_hd-textEl"
+                                  class="x-header-text x-tip-header-text x-tip-header-text-default" unselectable="on">&nbsp;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ext-quicktips-tip-body" class="x-tip-body x-tip-body-default x-tip-body-default" role="presentation">
+<span id="ext-quicktips-tip-outerCt" style="display:table;" role="presentation">
+<div id="ext-quicktips-tip-innerCt" style="display:table-cell;height:100%;vertical-align:top;" class=""
+     role="presentation">
+</div>
+</span>
+        </div>
+        <div id="ext-gen1024" role="presentation" class="x-tip-anchor x-tip-anchor-top">
+        </div>
+    </div>
+    <div style="z-index: 19000; margin-left: auto; margin-right: auto; width: 380px; height: 364px; box-shadow: 0px 0px 6px rgb(136, 136, 136); display: inline-block;"
+         id="ext-gen1056" class="x-css-shadow" role="presentation">
+    </div>
+    <div style="height: 368px;  margin-left: auto; margin-right: auto; z-index: 19001; width: 380px; display: inline-block;"
+         class="x-window x-layer x-window-default x-border-box" id="window-1018" tabindex="-1">
+        <div style="width: 380px; right: auto; left: -5px; top: -5px;"
+             class="x-window-header x-header x-header-horizontal x-header-draggable x-docked x-unselectable x-window-header-default x-horizontal x-window-header-horizontal x-window-header-default-horizontal x-top x-window-header-top x-window-header-default-top x-docked-top x-window-header-docked-top x-window-header-default-docked-top"
+             id="window-1018_header">
+            <div style="width: 360px;" id="window-1018_header-body"
+                 class="x-header-body x-window-header-body x-window-header-body-default x-window-header-body-horizontal x-window-header-body-default-horizontal x-window-header-body-top x-window-header-body-default-top x-window-header-body-docked-top x-window-header-body-default-docked-top x-box-layout-ct x-window-header-body-default-horizontal x-window-header-body-default-top x-window-header-body-default-docked-top"
+                 role="presentation">
+                <div style="width: 360px; height: 16px;" id="window-1018_header-innerCt" class="x-box-inner "
+                     role="presentation">
+                    <div style="width: 360px;" id="window-1018_header-targetEl" class="x-box-target"
+                         role="presentation">
+                        <div style="right: auto; left: 0px; top: 0px; margin: 0px; width: 360px;"
+                             class="x-component x-header-text-container x-window-header-text-container x-window-header-text-container-default x-box-item x-component-default"
+                             unselectable="on" id="window-1018_header_hd">
+                            <span id="window-1018_header_hd-textEl"
+                                  class="x-header-text x-window-header-text x-window-header-text-default"
+                                  unselectable="on">Въведете потребител и парола</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="left: 0px; top: 31px; width: 370px; height: 290px;" id="window-1018-body"
+             class="x-window-body x-window-body-default x-layout-fit x-window-body-default x-noborder-trbl"
+             role="presentation">
+            <div class="x-panel x-fit-item x-window-item x-panel-default"
+                 style="width: 370px; margin: 0px; height: 290px;" id="form-1009">
+                <div id="form-1009-body" class="x-panel-body x-panel-body-default x-panel-body-default x-noborder-trbl"
+                     role="presentation"
+                     style="background-image: url(&quot;http://92.247.18.147:8078/images/avo-bell-logo-2.png&quot;); background-repeat: no-repeat; padding: 0px; width: 370px; left: 0px; top: 0px; height: 290px;">
+<span id="form-1009-outerCt" style="display: table; width: 100%; table-layout: fixed;" role="presentation">
+<div id="form-1009-innerCt" style="display:table-cell;height:100%;vertical-align:top;padding:100px 1px 1px 1px" class=""
+     role="presentation">
+    <form action="http://avocourses.com/login/index.php" method="post" id="loginform">
+    <fieldset class="x-fieldset x-fieldset-with-title x-fieldset-with-legend x-fieldset-default"
+              style="margin: 7px; width: 354px;" id="fieldset-1010">
+        <legend class="x-fieldset-header x-fieldset-header-default" id="fieldset-1010-legend">
+<span id="fieldset-1010-legend-outerCt" style="display:table;" role="presentation">
+<div id="fieldset-1010-legend-innerCt" style="display:table-cell;height:100%;vertical-align:top;" class=""
+     role="presentation">
+    <div class="x-component x-fieldset-header-text x-component-default" id="fieldset-1010-legendTitle">Съществуващ
+        потребител
+    </div>
+</div>
+</span>
+        </legend>
+        <div style="width: 332px;" id="fieldset-1010-body" class="x-fieldset-body " role="presentation">
+<span id="fieldset-1010-outerCt" style="display: table; width: 100%; table-layout: fixed;" role="presentation">
+<div id="fieldset-1010-innerCt" style="display:table-cell;height:100%;vertical-align:top;" class="" role="presentation">
+    <table class="x-field x-table-plain x-form-item x-form-type-text x-field-default x-anchor-form-item x-form-invalid"
+           style="margin: 5px; table-layout: fixed; width: 322px;" role="presentation" id="textfield-1011"
+           cellpadding="0">
+        <tbody>
+        <tr role="presentation" id="textfield-1011-inputRow" class="x-form-item-input-row">
+            <td role="presentation" id="textfield-1011-labelCell" style="" halign="left" class="x-field-label-cell"
+                valign="top" width="105">
+                <label id="textfield-1011-labelEl" for="textfield-1011-inputEl"
+                       class="x-form-item-label x-unselectable x-form-item-label-left"
+                       style="width:100px;margin-right:5px;" unselectable="on">Email адрес<span
+                        role="separator">:</span>(Username)
+                </label>
+            </td>
+            <td style="width: 100%;" role="presentation" class="x-form-item-body  " id="textfield-1011-bodyEl"
+                colspan="1">
+                <input style="width: 100%;" id="textfield-1011-inputEl" role="textbox" size="1" name="username"
+                       class="x-form-field x-form-required-field x-form-text x-form-invalid-field" autocomplete="on"
+                       type="text" autofocus="autofocus">
+            </td>
+            <td role="presentation" id="textfield-1011-sideErrorCell" style="" valign="middle" width="21">
+                <div data-errorqtip="<ul class=&quot;x-list-plain&quot;>
+<li>Това поле е задължително</li>
+</ul>" role="alert" aria-live="polite" id="textfield-1011-errorEl" class="x-form-error-msg x-form-invalid-icon"
+                     style="">
+                    <ul class="x-list-plain">
+                        <li>Това поле е задължително</li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="x-field x-table-plain x-form-item x-form-type-pasfsword x-field-default x-anchor-form-item"
+           style="margin: 5px; table-layout: fixed; width: 322px;" role="presentation" id="textfield-1012"
+           cellpadding="0">
+        <tbody>
+        <tr role="presentation" id="textfield-1012-inputRow" class="x-form-item-input-row">
+            <td role="presentation" id="textfield-1012-labelCell" style="" halign="left" class="x-field-label-cell"
+                valign="top" width="105">
+                <label id="textfield-1012-labelEl" for="textfield-1012-inputEl"
+                       class="x-form-item-label x-unselectable x-form-item-label-left"
+                       style="width:100px;margin-right:5px;" unselectable="on">Парола<span role="separator">:</span>
+                </label>
+            </td>
+            <td style="width: 100%;" role="presentation" class="x-form-item-body  " id="textfield-1012-bodyEl"
+                colspan="2">
+                <input style="width: 100%;" id="textfield-1012-inputEl" role="textbox" size="1" name="password"
+                       class="x-form-field x-form-required-field x-form-text  " autocomplete="off" type="password">
+            </td>
+            <td role="presentation" id="textfield-1012-sideErrorCell" style="display: none;" valign="middle" width="21">
+                <div data-errorqtip="" role="alert" aria-live="polite" id="textfield-1012-errorEl"
+                     class="x-form-error-msg x-form-invalid-icon" style="display:none">
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <a class="x-btn x-unselectable x-btn-default-small x-noicon x-btn-noicon x-btn-default-small-noicon"
+       style="margin: 5px; height: 35px; width: 322px;" hidefocus="on" unselectable="on" tabindex="0" id="button-1013" onclick="document.getElementById('loginform').submit();">
+<span style="height: 27px;" id="button-1013-btnWrap" role="presentation" class="x-btn-wrap" unselectable="on">
+<span style="height: 27px;" id="button-1013-btnEl" class="x-btn-button" role="presentation">
+<span style="line-height: 27px;" id="button-1013-btnInnerEl" class="x-btn-inner x-btn-inner-center" unselectable="on">Вход</span>
+<span role="presentation" id="button-1013-btnIconEl" class="x-btn-icon-el  " unselectable="on" style="">
+</span>
+</span>
+</span>
+    </a>
+</div>
+</span>
+        </div>
+    </fieldset>
+        <input type="submit" value="login" style="display: none; width: 1px; height: 1px" />
+        </form>
+    <div class="x-panel x-panel-default" style="margin: 7px; height: 40px; width: 354px;" id="panel-1014">
+        <div style="height: 40px; left: 0px; top: 0px; width: 354px;" id="panel-1014-body"
+             class="x-panel-body x-panel-body-default x-column-layout-ct x-panel-body-default x-noborder-trbl"
+             role="presentation">
+<span id="panel-1014-outerCt" style="display: table; width: 100%; table-layout: fixed; height: 100%;"
+      role="presentation">
+<div id="panel-1014-innerCt" style="display:table-cell;height:100%;vertical-align:top;" class="" role="presentation">
+    <a class="x-btn x-unselectable x-column x-btn-default-small x-noicon x-btn-noicon x-btn-default-small-noicon"
+       style="height: 35px; width: 159px;" hidefocus="on" unselectable="on" tabindex="0" id="button-1015"
+       href="http://92.247.18.147:8078/account/new/?lang=bg">
+    </a>
+    <table style="table-layout: fixed; width: 35px;"
+           class="x-field x-table-plain x-form-item x-form-readonly x-form-type-text x-column x-field-default x-column-form-item"
+           role="presentation" id="displayfield-1016" cellpadding="0">
+        <tbody>
+        <tr role="presentation" id="displayfield-1016-inputRow" class="x-form-item-input-row">
+            <td role="presentation" id="displayfield-1016-labelCell" style="display:none;" halign="left"
+                class="x-field-label-cell" valign="top" width="80">
+                <label id="displayfield-1016-labelEl" for="displayfield-1016-inputEl"
+                       class="x-form-item-label x-unselectable x-form-item-label-left"
+                       style="width:75px;margin-right:5px;" unselectable="on">
+                </label>
+            </td>
+            <td style="width: 100%;" role="presentation" class="x-form-item-body x-form-display-field-body "
+                id="displayfield-1016-bodyEl" colspan="3">
+                <div style="width: 100%;" data-errorqtip="" id="displayfield-1016-inputEl" role="textbox"
+                     class="x-form-display-field">
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <a class="x-btn x-unselectable x-column x-btn-default-small x-noicon x-btn-noicon x-btn-default-small-noicon"
+       style="height: 35px; width: 159px;" hidefocus="on" unselectable="on" tabindex="0" id="button-1017"
+       href="http://92.247.18.147:8078/account/forgotpassword/?lang=bg">
+<span style="height: 27px;" id="button-1017-btnWrap" role="presentation" class="x-btn-wrap" unselectable="on">
+<span style="height: 27px;" id="button-1017-btnEl" class="x-btn-button" role="presentation">
+<span style="line-height: 27px;" id="button-1017-btnInnerEl" class="x-btn-inner x-btn-inner-center" unselectable="on">Проблем при влизане?</span>
+<span role="presentation" id="button-1017-btnIconEl" class="x-btn-icon-el  " unselectable="on" style="">
+</span>
+</span>
+</span>
+    </a>
+</div>
+</span>
+        </div>
+    </div>
+</div>
+</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

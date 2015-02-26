@@ -1,26 +1,3 @@
-<?php
-die('tuk sme');
-session_start();
-
-
-$_SESSION["user"] = "ivan";
-var_dump($_SESSION);
-function loggedin()
-{
-	$user = NULL;
-	if ($user != NULL)
-	{
-		return true;
-	}
-	else
-	{		
-		return false;
-	} 
-}
-
-
-?>
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -63,14 +40,6 @@ function loggedin()
 		<div id="navigation"><a href="http://data.bg" target="_blank"> data bg</a></div>
 		asd
 		<div id="div1">a</div>
-		<?php
-		$var = "asd3"; 
-		
-		if (loggedin() == true)
-		{
-		}
-
-		?>
 
 
 

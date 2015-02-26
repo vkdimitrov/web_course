@@ -1,67 +1,42 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Vali me</title>
-	</head>
-	<body>
-		<h1>Info</h1>
-		<form name="info" action="info.php" method="GET">
-			<table border="1">
-				<tr>
-					<td>Firstname:</td>
-					<td><input type="text" name="firstname"></td>
-				</tr>
-				<tr>
-					<td>Lastname:</td>
-					<td><input type="text" name="lastname"></td>
-				</tr>
-				<tr>
-					<td> 
-						Birth Date
-					</td>
-					<td>
-						<select name="year">
-							<?php
-							for ($i=1900; $i < 2015; $i++)
-							{
-							 #echo '<option value="'.$i.'">'.$i.'</option>';
-							 echo "<option value=\"$i\">$i</option>";
-							}
-							?>
-							</select>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="js/bootstrap.js"></script> 
+<title>vali me | bootstrap</title>
+</head>
+<body>
+<h1>bootstrap</h1>
+<div class="row">
+	<div class="com-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
+		<div class="row">
+		  <div class="col-md-3 col-xs-4" style="border: 1px solid black;">location</div>
+		  <div class="col-md-3 col-md-offset-4 col-xs-4 col-xs-offset-2" style="border: 1px solid black;">time </div>
+		</div>
 
-							<select name="days">
-							<?php
-							for ($i=1; $i < 31; $i++)
-							{
-							 #echo '<option value="'.$i.'">'.$i.'</option>';
-							 echo "<option value=\"$i\">$i</option>";
-							}
-							?>
-							</select>
+		<div class="row" style="padding-top: 10px">
+			<div class="row">
+		  		<div class="col-md-4 col-md-offset-3" style="border: 1px solid black;">location</div>
+			</div>
+			<div class="row">
+		  		<div class="col-md-4 col-md-offset-3" style="border: 1px solid black;">location</div>
+				
+			</div>
+			<div class="row">
+		  		<div class="col-md-4 col-md-offset-3" style="border: 1px solid black;">location</div>
+			</div>
+		</div>
 
-							<select name="months">
-							<?php
-							for ($i=1; $i <= 12; $i++)
-							{
-							 $month_name = date( 'F', mktime( 0, 0, 0, $i + 1, 0, 0, 0 ) );
-							 echo "<option value=\"$i\">$month_name</option>";
-							}
-							?>
-						</select> 
-					</td>
-				</tr>
-				<tr>
-					<td>
-					
-					</td> 
 
-					<td>
-						<input type="submit" value="Изпрати">
-					</td>
-				</tr>
-			</table>
-		</form>
-	</body>
-</html>
+		<div class="row" style="padding-top: 15px;">
+			<div class="col-md-2 col-md-offset-1" style="border: 1px solid black;">location</div>
+			<div class="col-md-2 col-md-offset-1" style="border: 1px solid black;">location</div>
+			<div class="col-md-2 col-md-offset-1" style="border: 1px solid black;">location</div>
+		</div>
+	</div>
+</div>
+</body>
+</html> 
+

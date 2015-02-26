@@ -1,19 +1,14 @@
 /* css go here */
-#container {
-	border: 1px solid red;
-	height: 500px;
+body {
+    background-color: #b0c4de;
+} 
+
+.temp {
+	font-size: 122px;
+	font-weight: bold;
+	text-align: center;
 }
 
-#header {
-	background: grey;
-	height: 80px; 
-	margin: 10px 10px 0px 10px;
+.info {
+	text-align: center;	
 }
-
-#temp_box {
-	background: #330066;
-	height: 300px;
-	width: 1000px; 
-	margin: 10px 10px 0px 10px;
-	top: 15px;
-}	

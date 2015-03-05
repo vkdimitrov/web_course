@@ -1,7 +1,15 @@
 /* css go here */
 body {
-    background-color: #b0c4de;
-} 
+	overflow-x:hidden;
+	background-color: #3399FF;
+	color: #FFFFFF;
+	font-size: 18px;
+	background: -webkit-linear-gradient(#3399FF, #85C2FF); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#3399FF, #85C2FF); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#3399FF, #85C2FF); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#3399FF, #85C2FF); /* Standard syntax */
+	
+}
 
 .temp {
 	font-size: 122px;
@@ -11,4 +19,25 @@ body {
 
 .info {
 	text-align: center;	
+}
+
+.short_description {
+	font-size: 22px;
+	font-weight: bold;
+	color: #FFCC66
+}
+
+.cloudy {
+	margin: 0 auto;
+	width:  150px;
+	height: 150px;
+	background: url("../assets/weather-icons.jpg") -40px -20px;
+}
+
+.top-box {
+	text-align: center;
+}
+
+.thumbnail	{
+	background-color: transparent;
 }

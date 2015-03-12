@@ -1,3 +1,17 @@
+<?php
+require 'vendor/autoload.php';
+$gi = geoip_open("vendor/GeoLiteCity.dat",GEOIP_STANDARD);
+$record = geoip_record_by_addr($gi, $_SERVER["REMOTE_ADDR"]);
+$city =  $record->city;
+
+if ($city === NULL)
+{
+	$city = "Sofia";
+}
+
+geoip_close($gi);
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,7 +27,7 @@
 	<div class="com-md-10 col-md-offset-1 col-xs-12">
 		<div class="row">
 		  <div class="col-md-3 col-xs-6 top-box">
-			<h2><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>Sofia</h2>
+			<h2><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span><?=$city?></h2>
 		  </div>
 		  <div class="col-md-3 col-md-offset-4 col-xs-6 top-box" >
 			<h2>

@@ -8,7 +8,6 @@ body {
 	background: -o-linear-gradient(#3399FF, #85C2FF); /* For Opera 11.1 to 12.0 */
 	background: -moz-linear-gradient(#3399FF, #85C2FF); /* For Firefox 3.6 to 15 */
 	background: linear-gradient(#3399FF, #85C2FF); /* Standard syntax */
-	
 }
 
 .temp {

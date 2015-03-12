@@ -82,4 +82,4 @@ geoip_close($gi);
 	</div>
 </div>
 </body>
-</html> 
+</html>

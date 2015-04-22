@@ -1,0 +1,86 @@
+body {
+	/*margin-bottom: 370px;*/
+}
+
+html {
+	position: absolute;
+	min-height: 100%;
+	width: 100%;
+}
+.navigation {
+	background-color: #f3f3f3;
+	color: #FFFFFF;
+}
+
+.navigation.navbar {
+	text-align: center;
+	border: 0;
+	border-radius: 0px;
+/*	-webkit-border-radius: 12px;
+	-webkit-border-top-left-radius: 0px;
+	-webkit-border-top-right-radius: 0px;
+	-moz-border-radius: 12px;
+	-moz-border-radius-topleft: 0px;
+	-moz-border-radius-topright: 0px;
+	border-radius: 12px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}*/
+}
+.navigation.navbar li {
+	float: none;
+	display: inline-block;
+}
+
+.navigation.navbar .nav-pills li a {
+	border-radius: 0;
+	color: #466;
+	font-size: 14px;
+	line-height: 24px;
+	/*text-transform: uppercase;*/
+}
+
+.navigation.navbar .nav-pills li a:hover, a:focus {
+	color: #000;
+	background-color: #f3f3f3;
+}
+
+.jumbo {
+	height: 295px;
+	margin-top: -70px;
+	background: url("../images/rsz_1rsz_1rsz_cause-education-bg.jpg") repeat-x scroll 0 0 #fff;
+}
+
+.jumbo.inner {
+	height: 80px;
+	margin-top: -70px;
+	background: url("../images/rsz_1rsz_1rsz_cause-education-bg.jpg") repeat-x scroll 0 0 #fff;
+}
+
+.main-content {
+	background-color: #f3f3f3;
+}
+
+.footer {
+	/*position: absolute;*/
+	/*bottom: 0;*/
+	width: 100%;
+	margin-top: 20px;
+	padding-bottom: 20px;
+	/*height: 320px;*/
+	background-color: #e8e8e8;
+}
+
+.footer-text {
+	margin: 0;
+	line-height: 60px;
+}
+
+.lower {
+	text-transform: lowercase;
+}
+
+.content {
+	margin-left: 10px;
+	margin-right: 10px;
+}

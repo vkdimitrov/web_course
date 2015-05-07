@@ -1,5 +1,7 @@
 <?php
 require 'vendor/autoload.php';
+include('mysql.php');
+
 $gi = geoip_open("vendor/GeoLiteCity.dat",GEOIP_STANDARD);
 $record = geoip_record_by_addr($gi, $_SERVER["REMOTE_ADDR"]);
 $city =  $record->city;
@@ -8,6 +10,11 @@ if ($city === NULL)
 {
 	$city = "Sofia";
 }
+
+$query = mysqli_query($link, 'SELECT id FROM cities where name="'.$city.'"') or die("Error db3"); 
+$city_id = $query->fetch_object()->id;
+$info_query = mysqli_query($link, "SELECT temp, description, wind_direction, wind_speed, humidity FROM current_weather where id=$city_id") or die("Error db3"); 
+$info = $info_query->fetch_object();
 
 geoip_close($gi);
 ?>
@@ -40,15 +47,15 @@ geoip_close($gi);
 		<div class="row" style="padding-top: 10px">
 			<div class="row">
 				<div class="col-md-4 col-md-offset-3" >
-					<div class="temp">9 &deg;</div>
+					<div class="temp"><?= $info->temp ?> &deg;</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-4 col-md-offset-3" >
 					<div class="info">
-						<p class="short_description">Partly Cloudy</p>
-						<p>Wind: NE at 2 mph</p>
-						<p>Humidity: 65%</p>
+						<p class="short_description"><?= $info->description ?></p>
+						<p>Wind: <?= $info->wind_direction ?> at <?= $info->wind_speed ?> mph</p>
+						<p>Humidity: <?= $info->humidity ?>%</p>
 					</div>
 				</div>
 			</div>

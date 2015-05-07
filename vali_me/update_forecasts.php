@@ -6,7 +6,7 @@ $query = mysqli_query($link, "SELECT id, api_id FROM cities WHERE api_id<>0 orde
 
 while ($row = $query->fetch_object())
 {
-	$url = "http://api.openweathermap.org/data/2.5/weather?id=$row->api_id&mode=xml&units=metric";
+	$url = "http://api.openweathermap.org/data/2.5/forecast?id=$row->api_id&mode=xml&units=metric";
 	#echo $url."<br>";
 	$context  = stream_context_create(array('http' => array('header' => 'Accept: application/xml')));
 	$xml = file_get_contents($url, false, $context);
@@ -21,8 +21,17 @@ while ($row = $query->fetch_object())
 	else
 	{
 		$xml = simplexml_load_string($xml);
-		if (is_object($xml) &&  is_object($xml->temperature) && is_object($xml->weather) && is_object($xml->wind) && is_object($xml->humidity))
+		if (is_object($xml))
 		{
+			$forecasts = $xml->forecast;
+			foreach ($forecasts->time as $row) {
+
+				echo "###############################################<br>";
+				echo $row->attributes()[0]."<br>";
+			}
+			die;
+				echo $time_arr[0]."<br>";
+			die;
 			$temp_arr = $xml->temperature->attributes();
 			$temp = round($temp_arr[0]);
 

@@ -23,11 +23,17 @@ while ($row = $query->fetch_object())
 		$xml = simplexml_load_string($xml);
 		if (is_object($xml))
 		{
+			$today = date('Y-m-d', time() + 86400)."T12:00:00";
+			$tomorrow = date('Y-m-d', time() + 86400 * 2)."T12:00:00";
+			$day_after_tomorrow = date('Y-m-d', time() + 86400 * 3)."T12:00:00";
+
 			$forecasts = $xml->forecast;
 			foreach ($forecasts->time as $row) {
-
-				echo "###############################################<br>";
-				echo $row->attributes()[0]."<br>";
+				if ($row->attributes()[0] == $today || $row->attributes()[0] == $tomorrow || $row->attributes()[0] == $day_after_tomorrow)
+				{
+					echo "###############################################<br>";
+					echo $row->temperature."<br>";
+				}
 			}
 			die;
 				echo $time_arr[0]."<br>";
